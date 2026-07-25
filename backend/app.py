@@ -9,7 +9,7 @@ import pandas as pd  # For data manipulation
 sales_predictor_api = Flask("Sales Predictor for the Store")
 
 # Load the trained machine learning model
-model = joblib.load("/content/drive/MyDrive/tuned_xgb_model.joblib")
+model = joblib.load("tuned_xgb_model.joblib")
 
 # Define a route for the home page (GET request)
 @sales_predictor_api.get('/')
