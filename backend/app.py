@@ -1,5 +1,9 @@
 # Import necessary libraries
 from flask import Flask, request, jsonify  # For creating the Flask API
+# Import necessary libraries
+import numpy as np
+import joblib  # For loading the serialized model
+import pandas as pd  # For data manipulation
 
 # Initialize the Flask application
 sales_predictor_api = Flask("Sales Predictor for the Store")
